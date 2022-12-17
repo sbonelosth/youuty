@@ -29,7 +29,8 @@ app.get("/", (req, res) => {
 })
 
 app.post("/youty-mp3", async (req, res) => {
-  const videoId = req.body.videoID;
+  const videoIdx = req.body.videoID;
+  const videoId = videoIdx.slice(32, videoIdx.length);
   if (
     videoId === undefined ||
     videoId === "" ||
