@@ -7,8 +7,19 @@ body {
   color: #E6C462;
 }
 
-h2 {
+.home a {
   font-weight: bold;
+  text-decoration: none;
+  font-size: 25px;
+  color: #E6C462;
+}
+
+.home a:hover {
+  color: wheat;
+}
+
+.home {
+  padding: 15px;
 }
 
 .input {
@@ -16,6 +27,7 @@ h2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   padding: 0 0 0 20px;
+  transition: transform .3s;
 }
 
 #urlinput {
@@ -27,6 +39,10 @@ h2 {
   outline: 0;
 }
 
+.input:hover {
+  transform: scale(1.05);
+}
+
 #convert-btn {
   font-size: 20px;
   padding: 15px;
@@ -34,12 +50,13 @@ h2 {
   font-weight: bold;
   border-top-right-radius: 65px;
   border-bottom-right-radius: 65px;
-  transition: background-color .5s;
+  transition: background-color .5s, transform .5s;
 }
 
 #convert-btn:hover {
   color: white;
   background-color: #E6C462;
+  transform: scale(1.08);
 }
 
 #download-btn {
@@ -73,7 +90,7 @@ button {
 
 .top-container {
   width: 100%;
-  margin-top: 40vh;
+  margin-top: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,4 +99,14 @@ button {
 
 .bottom-container {
   color: #E6C462;
+}
+
+.footer {
+  width: 100%;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  font-size: 11px;
+  color: grey;
+  text-align: center;
 }
