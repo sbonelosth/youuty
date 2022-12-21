@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 
 app.post("/youty-mp3", async (req, res) => {
   const videoIdx = req.body.videoID;
-  const videoId = videoIdx.slice(videoIdx.length - 12, videoIdx.length);
+  const videoId = videoIdx.slice(videoIdx.length - 11, videoIdx.length);
   if (
     videoId === undefined ||
     videoId === "" ||
